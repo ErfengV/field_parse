@@ -1,5 +1,9 @@
-字段,12,date,12,2,[v],[],[],000,你好
-字段,12,date,12,2,[v],[],[],000,你好
-字段,12,date,12,2,[v],[],[],000,你好
-字段,12,date,12,2,[v],[],[],000,你好
-字段,12,date,12,2,[v],[],[],000,你好
+字段名	#	数据类型	长度	标度	非空	自动生成	自动递增	缺省	描述
+hr_company	1	NVARCHAR	6	[NULL]	false	false	false	[NULL]
+hr_sd_area	2	NVARCHAR	9	[NULL]	false	false	false	[NULL]
+hr_dept_name	3	NVARCHAR	10	[NULL]	false	false	false	[NULL]
+hr_dept_code	4	NVARCHAR	8	[NULL]	false	false	false	[NULL]
+adms_org_name	5	NVARCHAR	4	[NULL]	false	false	false	[NULL]
+adms_org_code	6	NVARCHAR	4	[NULL]	false	false	false	[NULL]
+strg_mgt_dept_name	7	NVARCHAR	10	[NULL]	false	false	false	[NULL]
+strg_mgt_dept_code	8	NVARCHAR	8	[NULL]	false	false	false	[NULL]

@@ -14,6 +14,13 @@ public class HanaField {
     public static final String DECIMAL  = "DECIMAL";
     public static final String DATE     = "DATE";
     public static final String TIMESTAMP= "TIMESTAMP";
+    public static final String CLOB="CLOB";
+    public static final String SECONDDATE="SECONDDATE";
+    public static final String VARCHAR="VARCHAR";
+
+
+
+    public static final String ETL_CONTENTS ="to_char(CURRENT_TIMESTAMP,'yyyy-mm-dd HH24:mi:ss') AS ETL_TIME";
 
 
 

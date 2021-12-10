@@ -16,4 +16,10 @@ public class HiveField {
 
     public static final String DATE="DATE";
     public static final String TIMESTAMP="TIMESTAMP";
+
+    public static final String SELECT="SELECT";
+
+
+    public static final String ETL_CONTENTS_STRING="ETL_TIME STRING COMMENT 'etl时间'";
+
 }

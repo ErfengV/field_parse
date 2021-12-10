@@ -12,10 +12,11 @@ import java.io.*;
  */
 public class FileUtils {
 
-    /**
+
+     /**
      * 编码方式
      */
-    private static final String ENCODING = "UTF-8";
+    private static final String ENCODING = "GBK";
 
     /**
      * 获取文件的行
@@ -24,17 +25,16 @@ public class FileUtils {
      *            文件名称
      * @return List<String>
      */
-    public static String getContentByLine(String fileName) {
+    public static String getContentByLine(String fileName,String encode) {
         StringBuffer lines = new StringBuffer();
         InputStreamReader read = null;
         BufferedReader bufferedReader = null;
         try {
             File file=new File(fileName);
             //System.out.println( file.getAbsolutePath());
-
             // 判断文件是否存在
             if (file.isFile() && file.exists()) {
-                read = new InputStreamReader(new FileInputStream(file), ENCODING);
+                read = new InputStreamReader(new FileInputStream(file), encode==null?ENCODING:encode);
                 bufferedReader = new BufferedReader(read);
                 String lineTxt = null;
                 while ((lineTxt = bufferedReader.readLine()) != null) {
